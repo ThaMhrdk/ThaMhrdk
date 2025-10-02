@@ -1,33 +1,72 @@
-<svg fill="none" viewBox="0 0 900 200" width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg">
+
   <style>
-    .title {
-      font: bold 36px 'Segoe UI', sans-serif;
+    .text {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 35px;
+      font-weight: 600;
       fill: url(#grad);
-      animation: color-change 3s infinite;
     }
-    .subtitle {
-      font: 16px 'Segoe UI', sans-serif;
-      fill: #777;
+
+    /* Animasi Hi There */
+    .hi {
+      opacity: 0;
+      animation: showHideHi 6s infinite;
     }
-    @keyframes color-change {
-      0%   { fill: #ff4d4d; }
-      25%  { fill: #ffa64d; }
-      50%  { fill: #4dff88; }
-      75%  { fill: #4da6ff; }
-      100% { fill: #ff4d4d; }
+
+    @keyframes showHideHi {
+      0%   { opacity: 0; }
+      5%   { opacity: 1; }
+      25%  { opacity: 1; }
+      30%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* Typing effect */
+    .typing {
+      width: 0ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #808080;
+      opacity: 0;
+      animation: typing 6s steps(22) infinite, blink 1s infinite;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 35px;
+      font-weight: 600;
+      background: linear-gradient(90deg,#FF0080,#7928CA,#2AF598);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @keyframes typing {
+      0%, 30%   { width: 0ch; opacity: 0; }
+      35%       { opacity: 1; }
+      35%, 70%  { width: 22ch; opacity: 1; }
+      75%, 100% { width: 22ch; opacity: 0; }
+    }
+
+    @keyframes blink {
+      0%, 50% { border-color: #808080; }
+      50.01%, 100% { border-color: transparent; }
     }
   </style>
 
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="100%" y2="0">
-      <stop stop-color="#ff7e5f" offset="0%"/>
-      <stop stop-color="#feb47b" offset="25%"/>
-      <stop stop-color="#86a8e7" offset="50%"/>
-      <stop stop-color="#91eae4" offset="75%"/>
-      <stop stop-color="#4facfe" offset="100%"/>
+    <linearGradient id="grad" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#FF0080"/>
+      <stop offset="50%" stop-color="#7928CA"/>
+      <stop offset="100%" stop-color="#2AF598"/>
     </linearGradient>
   </defs>
 
-  <text x="20" y="80" class="title">Hi There! &#128075; I'm Muhammad Anantha Mahardika Ridwan</text>
-  <text x="20" y="120" class="subtitle">Aspiring Full-Stack Engineer • Telkom University • Bandung, Indonesia</text>
+  <!-- Hi There -->
+  <text x="20" y="70" class="text hi">Hi There!</text>
+
+  <!-- Nama dengan typing -->
+  <foreignObject x="20" y="50" width="1000" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="typing">
+      I'm Anantha Mahardika
+    </div>
+  </foreignObject>
+
 </svg>
