@@ -7,7 +7,7 @@
 
 <div align="center">
   🔭 Currently studying at Telkom University  
-  🌱 Learning Backend Development (Node.js, Express, MySQL)  
+  🌱 Learning Backend Development (Node.js, Laravel, Fluter)  
   🎯 Goal: Become a Full-Stack Developer and contribute to open-source  
   ⚡ Fun fact: I like playing game series and coding while listening to music  
 </div>
@@ -39,5 +39,5 @@
   <a href="https://www.instagram.com/anantha_mr/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"/></a>
   <a href="https://github.com/ThaMhrdk"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github"/></a>
   <a href="https://www.linkedin.com/in/anantha-mahardika/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
-  <a href="mailto:anantha@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
+  <a href="mailto:thamhrdk@google.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
 </div>
