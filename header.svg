@@ -1,29 +1,13 @@
-<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 900 200" width="900" height="200" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title {
-      font: bold 40px 'Segoe UI', sans-serif;
+      font: bold 36px 'Segoe UI', sans-serif;
       fill: url(#grad);
+      animation: color-change 3s infinite;
     }
     .subtitle {
-      font: 18px 'Segoe UI', sans-serif;
+      font: 16px 'Segoe UI', sans-serif;
       fill: #777;
-    }
-    .wave {
-      transform-origin: 70% 70%;
-      animation: wave-animation 2s infinite;
-    }
-    @keyframes wave-animation {
-      0% { transform: rotate(0deg); }
-      10% { transform: rotate(14deg); }
-      20% { transform: rotate(-8deg); }
-      30% { transform: rotate(14deg); }
-      40% { transform: rotate(-4deg); }
-      50% { transform: rotate(10deg); }
-      60% { transform: rotate(0deg); }
-      100% { transform: rotate(0deg); }
-    }
-    .colorful {
-      animation: color-change 3s infinite;
     }
     @keyframes color-change {
       0%   { fill: #ff4d4d; }
@@ -44,5 +28,6 @@
     </linearGradient>
   </defs>
 
-  <text x="20" y="80" class="title colorful">Hi There! 👋 I'm Muhammad Anantha Mahardika Ridwan</text>
-  <text x="20" y="120" class="subtitle">Aspiring Full-Stack Engineer • Telkom University • B
+  <text x="20" y="80" class="title">Hi There! &#128075; I'm Muhammad Anantha Mahardika Ridwan</text>
+  <text x="20" y="120" class="subtitle">Aspiring Full-Stack Engineer • Telkom University • Bandung, Indonesia</text>
+</svg>
