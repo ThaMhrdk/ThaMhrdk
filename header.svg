@@ -6,14 +6,13 @@
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0%" stop-color="#ff6b6b"/>
       <stop offset="33%" stop-color="#ffd166"/>
-      <stop offset="66%" stop-color="#6bcB77"/>
+      <stop offset="66%" stop-color="#6bcb77"/>
       <stop offset="100%" stop-color="#6ec1ff"/>
     </linearGradient>
 
-    <!-- mask untuk efek ketik (reveal) -->
+    <!-- mask untuk efek ketik -->
     <mask id="m">
       <rect x="0" y="0" width="100%" height="100%" fill="black"/>
-      <!-- rectangle putih akan bergerak, memperlihatkan teks di bawah -->
       <rect id="reveal" x="-10" y="0" width="0" height="140" fill="white">
         <animate attributeName="width"
                  from="0" to="1100"
@@ -23,8 +22,6 @@
       </rect>
     </mask>
 
-    <!-- gaya font fallback: Righteous tidak selalu tersedia di GitHub viewer,
-         jadi gunakan family yang mirip -->
     <style type="text/css"><![CDATA[
       .title {
         font-family: 'Righteous', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -39,44 +36,41 @@
     ]]></style>
   </defs>
 
-  <!-- background transparan supaya cocok di dark/light -->
+  <!-- background -->
   <rect x="0" y="0" width="100%" height="100%" fill="transparent"/>
 
-  <!-- teks utama (diisi gradient) -->
+  <!-- teks -->
   <g id="gT" mask="url(#m)" transform="translate(0,26)">
     <text x="50%" y="45" text-anchor="middle" class="title" fill="url(#g)">
-      Hi There! 👋  I'm Muhammad Anantha Mahardika Ridwan
+      Hi There! 👋 I'm Muhammad Anantha Mahardika Ridwan
     </text>
     <text x="50%" y="90" text-anchor="middle" class="subtitle" fill="#9aa4b2">
-      Aspiring Full-Stack Engineer • Telkom University • From Bandung, Indonesia
+      Aspiring Full-Stack Engineer • Telkom University • Bandung, Indonesia
     </text>
   </g>
 
-  <!-- efek jedag-jedug (pulse) pada keseluruhan group -->
-  <g id="pulse" transform="translate(0,0)">
-    <!-- animasi: skala kecil-besar beberapa kali setelah reveal selesai -->
+  <!-- efek jedag-jedug -->
+  <g id="pulse">
     <animateTransform xlink:href="#gT"
                       attributeName="transform"
                       type="scale"
-                      values="1;1.03;0.98;1.02;1"
-                      keyTimes="0;0.45;0.7;0.9;1"
-                      dur="1.0s"
-                      begin="3.5s"  <!-- mulai setelah efek ketik selesai -->
+                      values="1;1.05;0.95;1.03;1"
+                      keyTimes="0;0.25;0.5;0.75;1"
+                      dur="1s"
+                      begin="3.5s"
                       repeatCount="3" />
-    <!-- tambahan getar kecil (fast) untuk nuansa 'jedag' -->
     <animateTransform xlink:href="#gT"
                       attributeName="transform"
                       type="translate"
                       values="0 0; 0 -3; 0 2; 0 -1; 0 0"
                       keyTimes="0;0.15;0.4;0.7;1"
-                      dur="1.0s"
+                      dur="1s"
                       begin="3.5s"
                       repeatCount="3" />
   </g>
 
-  <!-- subtle shimmer yg terus berjalan (opsional, loop) -->
+  <!-- shimmer -->
   <rect x="-300" y="0" width="300" height="140" fill="white" opacity="0.06">
     <animate attributeName="x" from="-300" to="1200" dur="5s" repeatCount="indefinite" />
   </rect>
-
 </svg>
