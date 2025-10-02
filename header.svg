@@ -63,7 +63,7 @@
   <text x="50%" y="40%" class="text hi">Hi There!</text>
 
   <!-- Nama dengan typing di tengah -->
-  <foreignObject x="50%" y="55%" width="500" height="50">
+  <foreignObject x="50%" y="40%" width="500" height="50">
     <div xmlns="http://www.w3.org/1999/xhtml" class="typing">
       I'm Anantha Mahardika
     </div>
