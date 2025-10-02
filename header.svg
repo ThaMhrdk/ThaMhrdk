@@ -1,76 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1000" height="140" viewBox="0 0 1000 140" preserveAspectRatio="xMidYMid meet">
+<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title {
+      font: bold 40px 'Segoe UI', sans-serif;
+      fill: url(#grad);
+    }
+    .subtitle {
+      font: 18px 'Segoe UI', sans-serif;
+      fill: #777;
+    }
+    .wave {
+      transform-origin: 70% 70%;
+      animation: wave-animation 2s infinite;
+    }
+    @keyframes wave-animation {
+      0% { transform: rotate(0deg); }
+      10% { transform: rotate(14deg); }
+      20% { transform: rotate(-8deg); }
+      30% { transform: rotate(14deg); }
+      40% { transform: rotate(-4deg); }
+      50% { transform: rotate(10deg); }
+      60% { transform: rotate(0deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .colorful {
+      animation: color-change 3s infinite;
+    }
+    @keyframes color-change {
+      0%   { fill: #ff4d4d; }
+      25%  { fill: #ffa64d; }
+      50%  { fill: #4dff88; }
+      75%  { fill: #4da6ff; }
+      100% { fill: #ff4d4d; }
+    }
+  </style>
+
   <defs>
-    <!-- gradient untuk teks -->
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#ff6b6b"/>
-      <stop offset="33%" stop-color="#ffd166"/>
-      <stop offset="66%" stop-color="#6bcb77"/>
-      <stop offset="100%" stop-color="#6ec1ff"/>
+    <linearGradient id="grad" x1="0" y1="0" x2="100%" y2="0">
+      <stop stop-color="#ff7e5f" offset="0%"/>
+      <stop stop-color="#feb47b" offset="25%"/>
+      <stop stop-color="#86a8e7" offset="50%"/>
+      <stop stop-color="#91eae4" offset="75%"/>
+      <stop stop-color="#4facfe" offset="100%"/>
     </linearGradient>
-
-    <!-- mask untuk efek ketik -->
-    <mask id="m">
-      <rect x="0" y="0" width="100%" height="100%" fill="black"/>
-      <rect id="reveal" x="-10" y="0" width="0" height="140" fill="white">
-        <animate attributeName="width"
-                 from="0" to="1100"
-                 dur="3.4s"
-                 begin="0s"
-                 fill="freeze" />
-      </rect>
-    </mask>
-
-    <style type="text/css"><![CDATA[
-      .title {
-        font-family: 'Righteous', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 38px;
-        letter-spacing: 1px;
-      }
-      .subtitle {
-        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-        font-size: 14px;
-      }
-    ]]></style>
   </defs>
 
-  <!-- background -->
-  <rect x="0" y="0" width="100%" height="100%" fill="transparent"/>
-
-  <!-- teks -->
-  <g id="gT" mask="url(#m)" transform="translate(0,26)">
-    <text x="50%" y="45" text-anchor="middle" class="title" fill="url(#g)">
-      Hi There! 👋 I'm Muhammad Anantha Mahardika Ridwan
-    </text>
-    <text x="50%" y="90" text-anchor="middle" class="subtitle" fill="#9aa4b2">
-      Aspiring Full-Stack Engineer • Telkom University • Bandung, Indonesia
-    </text>
-  </g>
-
-  <!-- efek jedag-jedug -->
-  <g id="pulse">
-    <animateTransform xlink:href="#gT"
-                      attributeName="transform"
-                      type="scale"
-                      values="1;1.05;0.95;1.03;1"
-                      keyTimes="0;0.25;0.5;0.75;1"
-                      dur="1s"
-                      begin="3.5s"
-                      repeatCount="3" />
-    <animateTransform xlink:href="#gT"
-                      attributeName="transform"
-                      type="translate"
-                      values="0 0; 0 -3; 0 2; 0 -1; 0 0"
-                      keyTimes="0;0.15;0.4;0.7;1"
-                      dur="1s"
-                      begin="3.5s"
-                      repeatCount="3" />
-  </g>
-
-  <!-- shimmer -->
-  <rect x="-300" y="0" width="300" height="140" fill="white" opacity="0.06">
-    <animate attributeName="x" from="-300" to="1200" dur="5s" repeatCount="indefinite" />
-  </rect>
-</svg>
+  <text x="20" y="80" class="title colorful">Hi There! 👋 I'm Muhammad Anantha Mahardika Ridwan</text>
+  <text x="20" y="120" class="subtitle">Aspiring Full-Stack Engineer • Telkom University • B
