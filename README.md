@@ -17,7 +17,7 @@
 ### ⚒️ Tech Stack & Tools
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,java,python,mysql,tailwind,bootstrap,git,github,vscode,figma" />
+  <img src="https://skillicons.dev/icons?i=html,js,react,nodejs,laravel,mysql,git,vscode,virtualbox,wireshark,debian,github,java,dart,flutter" />
 </div>
 
 ---
