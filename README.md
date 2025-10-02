@@ -23,13 +23,6 @@
 
 <hr/>
 
-<h2 align="center">🐍 GitHub Contributions</h2>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ThaMhrdk/ThaMhrdk/output/github-contribution-grid-snake.svg" alt="GitHub contributions" width="600"/>
-</div>
-
-<hr/>
-
 <h2 align="center">📊 GitHub Stats</h2>
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=ThaMhrdk&theme=radical&border_radius=10" width="380" alt="GitHub Streak" />
