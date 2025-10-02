@@ -1,7 +1,7 @@
 <!-- Header -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Pacifico&size=35&center=true&width=550&height=70&duration=3000&lines=Hello+World!+%F0%9F%91%8B;+I'm+Muhammad+Anantha+Mahardika+Ridwan!" alt="Typing Header" />
-</h1>
+<p align="center">
+  <img src="header.svg" alt="header" width="600"/>
+</p>
 
 <h3 align="center">Front-End Engineer | Telkom University | Bandung, West Java</h3>
 
